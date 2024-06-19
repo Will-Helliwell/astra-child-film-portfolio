@@ -1,0 +1,120 @@
+/*
+Theme Name: Astra Child Theme Film Portfolio
+Theme URI:
+Description: Child theme for the Astra Theme for film producers
+Author: Will Helliwell
+Author URI: https://github.com/Will-Helliwell
+Template: astra
+Version: 1.0.0
+Text Domain: astrachildfilmportfolio
+*/
+
+/* PAGE COLOURS AND BACKGROUNDS */
+/* home page */
+body.home .ast-builder-menu-1 .current-menu-item > .menu-link {
+  color:#e3be68;
+}
+body.home {
+  background-image: url("http://film-portfolio-website.local/wp-content/uploads/2024/06/natalie-parham-9Qccv5rZtRM-unsplash-scaled.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* bio page  */
+body.page-id-2 .ast-site-identity .site-title a {
+  color: #054b57;
+}
+body.page-id-2 .ast-builder-menu-1 .menu-item > .menu-link {
+  color: #054b57;
+}
+body.page-id-2 .ast-builder-menu-1 .menu-item > .menu-link:hover,
+body.page-id-2 .ast-builder-menu-1 .menu-item > .menu-link:focus {
+  color: blue;
+}
+body.page-id-2 {
+  background-image: url("http://film-portfolio-website.local/wp-content/uploads/2024/06/Manchester-by-the-sea.jpeg");
+  background-position: center 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: black;
+}
+
+/* reels page */
+body.page-id-30 #content {
+  background-color: black;
+}
+
+/* contact page */
+body.page-id-35 .ast-site-identity .site-title a {
+  color: #a93016;
+}
+body.page-id-35 .ast-builder-menu-1 .menu-item > .menu-link {
+  color: #a93016;
+}
+body.page-id-35 .ast-builder-menu-1 .menu-item > .menu-link:hover,
+body.page-id-35 .ast-builder-menu-1 .menu-item > .menu-link:focus {
+  color: red;
+}
+h2.contact-page-header {
+  color: #a93016;
+}
+body.page-id-35 {
+  background-image: url("http://film-portfolio-website.local/wp-content/uploads/2024/06/elti-meshau-2S2F2exmbhw-unsplash-scaled.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #a93016;
+}
+body.page-id-35 a {
+  color: red;
+}
+body.page-id-35 a:hover,
+body.page-id-35 a:focus {
+  color: orange;
+}
+
+
+/* CUSTOM BLOG GRID SHORTCODE */
+.custom-blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-item {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%; /* This creates a square aspect ratio */
+    background-size: cover;
+    background-position: center;
+    margin: 0; /* Remove margin between items */
+    display: block; /* Ensure <a> tag is block level */
+    text-decoration: none; /* Remove underline from links */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+.grid-item:hover {
+    transform: scale(1.05); /* Slightly scale up the preview on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
+.post-details {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+.grid-item:hover .post-details {
+    background: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
+}
+.post-details h2, .post-details p {
+    margin: 0;
+    padding: 5px 0;
+    color: white;
+}
