@@ -9,10 +9,22 @@ Version: 1.0.0
 Text Domain: astrachildfilmportfolio
 */
 
+/* CSS Variables */
+:root {
+  --color-gold: #e3be68;
+  --color-teal: #054b57;
+  --color-blue: blue;
+  --color-black: black;
+  --color-dark-orange: #a93016;
+  --color-red: red;
+  --color-orange: orange;
+  --transition-time: 0.3s;
+}
+
 /* PAGE COLOURS AND BACKGROUNDS */
 /* home page */
 body.home .ast-builder-menu-1 .current-menu-item > .menu-link {
-  color:#e3be68;
+  color: var(--color-gold);
 }
 body.home {
   background-image: url("http://film-portfolio-website.local/wp-content/uploads/2024/06/natalie-parham-9Qccv5rZtRM-unsplash-scaled.jpg");
@@ -24,14 +36,14 @@ body.home {
 
 /* bio page  */
 body.page-id-2 .ast-site-identity .site-title a {
-  color: #054b57;
+  color: var(--color-teal);
 }
 body.page-id-2 .ast-builder-menu-1 .menu-item > .menu-link {
-  color: #054b57;
+  color: var(--color-teal);
 }
 body.page-id-2 .ast-builder-menu-1 .menu-item > .menu-link:hover,
 body.page-id-2 .ast-builder-menu-1 .menu-item > .menu-link:focus {
-  color: blue;
+  color: var(--color-blue);
 }
 body.page-id-2 {
   background-image: url("http://film-portfolio-website.local/wp-content/uploads/2024/06/Manchester-by-the-sea.jpeg");
@@ -39,28 +51,27 @@ body.page-id-2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
-  color: black;
+  color: var(--color-black);
 }
 
 /* reels page */
 body.page-id-30 #content {
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 /* contact page */
 body.page-id-35 .ast-site-identity .site-title a {
-  color: #a93016;
+  color: var(--color-dark-orange);
 }
 body.page-id-35 .ast-builder-menu-1 .menu-item > .menu-link {
-  color: #a93016;
+  color: var(--color-dark-orange);
 }
 body.page-id-35 .ast-builder-menu-1 .menu-item > .menu-link:hover,
 body.page-id-35 .ast-builder-menu-1 .menu-item > .menu-link:focus {
-  color: red;
+  color: var(--color-red);
 }
 h2.contact-page-header {
-  color: #a93016;
+  color: var(--color-dark-orange);
 }
 body.page-id-35 {
   background-image: url("http://film-portfolio-website.local/wp-content/uploads/2024/06/elti-meshau-2S2F2exmbhw-unsplash-scaled.jpg");
@@ -68,17 +79,15 @@ body.page-id-35 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
-  color: #a93016;
+  color: var(--color-dark-orange);
 }
 body.page-id-35 a {
-  color: red;
+  color: var(--color-red);
 }
 body.page-id-35 a:hover,
 body.page-id-35 a:focus {
-  color: orange;
+  color: var(--color-orange);
 }
-
 
 /* CUSTOM BLOG GRID SHORTCODE */
 .custom-blog-grid {
@@ -94,7 +103,7 @@ body.page-id-35 a:focus {
     margin: 0; /* Remove margin between items */
     display: block; /* Ensure <a> tag is block level */
     text-decoration: none; /* Remove underline from links */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    transition: transform var(--transition-time) ease, box-shadow var(--transition-time) ease; /* Smooth transition for hover effects */
 }
 .grid-item:hover {
     transform: scale(1.05); /* Slightly scale up the preview on hover */
@@ -108,7 +117,7 @@ body.page-id-35 a:focus {
     width: 100%;
     text-align: center;
     padding: 10px;
-    transition: background 0.3s ease; /* Smooth transition for background color */
+    transition: background var(--transition-time) ease; /* Smooth transition for background color */
 }
 .grid-item:hover .post-details {
     background: rgba(0, 0, 0, 0.7); /* Darken the background color on hover */
